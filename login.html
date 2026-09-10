@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Modern stationery and office supplies store for personal and corporate needs.">
+
+    <meta
+        name="keywords"
+        content="stationery, office supplies, notebooks, pens, paper, corporate supplies">
+
+    <meta name="author" content="Stationery Store">
+
+
+    <!-- =====================================================
+         PAGE TITLE
+    ====================================================== -->
+
+    <title>Stationery Store | Office & Stationery Supplies</title>
+    <!-- =========================================================
+     FAVICON
+========================================================= -->
+
+<link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         We will keep one font family consistent
+         throughout the complete website.
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+         Used for header icons
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         MAIN CSS
+         Part 2
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+
+    <!-- =====================================================
+         RESPONSIVE CSS
+         Part 3
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+
+<body>
+<!-- =========================================================
+     LOGIN PAGE
+     SECTION 1 - LOGIN
+     PART 1 - HTML
+========================================================= -->
+
+<section
+    class="login-section"
+    id="loginSection"
+    aria-labelledby="loginTitle"
+>
+
+    <div class="login-container">
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <div class="login-top">
+
+            <!-- LOGO -->
+            <a
+                href="index.html"
+                class="login-logo-link"
+                aria-label="Go to homepage"
+            >
+                <img
+                    src="images/logo.png"
+                    alt="Stationery Store"
+                    class="login-logo"
+                >
+            </a>
+
+            <!-- AUTH CONTROLS -->
+            <div class="login-controls">
+
+                <button
+                    type="button"
+                    class="login-control-btn"
+                    data-auth-control="rtl"
+                    aria-label="Switch text direction"
+                >
+                    <i
+                        class="fas fa-align-right"
+                        aria-hidden="true"
+                    ></i>
+                   
+                </button>
+
+                <button
+                    type="button"
+                    class="login-control-btn"
+                    data-auth-control="dark"
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                >
+                    <i
+                        class="fas fa-moon"
+                        aria-hidden="true"
+                    ></i>
+                 
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             LOGIN LAYOUT
+        ================================================== -->
+
+        <div class="login-layout">
+
+
+            <!-- =============================================
+                 LOGIN FORM CARD
+            ============================================== -->
+
+            <div class="login-form-card">
+
+                <!-- FORM HEADER -->
+                <div class="login-form-header">
+
+                    <span class="section-eyebrow">
+                        WELCOME BACK
+                    </span>
+
+                    <h1
+                        class="login-title"
+                        id="loginTitle"
+                    >
+                        Sign in to Your Account
+                    </h1>
+
+                    <p class="login-description">
+                        Sign in to manage your orders, account details,
+                        and stationery shopping preferences.
+                    </p>
+
+                </div>
+
+
+                <!-- LOGIN FORM -->
+                <form
+                    class="login-form"
+                    id="loginForm"
+                    action="#"
+                    method="post"
+                >
+
+                    <!-- EMAIL -->
+                    <div class="login-form-group">
+
+                        <label for="loginEmail">
+                            Email Address
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <div class="login-form-group">
+
+                        <div class="login-password-label">
+
+                            <label for="loginPassword">
+                                Password
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <a
+                                href="#"
+                                class="login-forgot-link"
+                            >
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="login-password-field">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="login-password-toggle"
+                                id="loginPasswordToggle"
+                                aria-label="Show password"
+                                aria-controls="loginPassword"
+                                aria-pressed="false"
+                            >
+                                <i
+                                    class="fas fa-eye"
+                                    aria-hidden="true"
+                                ></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REMEMBER ME -->
+                    <div class="login-options">
+
+                        <label class="login-remember">
+
+                            <input
+                                type="checkbox"
+                                id="loginRemember"
+                                name="remember"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+                    <button
+                        type="submit"
+                        class="primary-btn login-submit-btn"
+                    >
+                        <span>Login</span>
+
+                        <i
+                            class="fas fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+                    </button>
+
+
+                    <!-- DIVIDER -->
+                    <div
+                        class="login-divider"
+                        aria-hidden="true"
+                    >
+                        <span>OR CONTINUE WITH</span>
+                    </div>
+
+
+                    <!-- =====================================
+                         SOCIAL LOGIN BUTTONS
+                    ====================================== -->
+
+                    <div class="login-social-buttons">
+
+
+                        <!-- GOOGLE -->
+                        <button
+                            type="button"
+                            class="social-login-btn google-login-btn"
+                            aria-label="Continue with Google"
+                        >
+
+                            <svg
+                                class="google-login-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                               <path
+                fill="#4285F4"
+                d="M21.35 12.27c0-.79-.07-1.55-.22-2.27H12v4.3h5.22a4.47 4.47 0 0 1-1.94 2.93v2.43h3.14c1.84-1.69 2.93-4.18 2.93-7.39z"
+            />
+
+            <path
+                fill="#34A853"
+                d="M12 21.75c2.63 0 4.84-.87 6.45-2.36l-3.14-2.43c-.87.58-1.98.93-3.31.93-2.54 0-4.69-1.72-5.46-4.03H3.29v2.5A9.75 9.75 0 0 0 12 21.75z"
+            />
+
+            <path
+                fill="#FBBC05"
+                d="M6.54 13.86A5.86 5.86 0 0 1 6.23 12c0-.65.11-1.28.31-1.86v-2.5H3.29A9.75 9.75 0 0 0 2.25 12c0 1.57.38 3.05 1.04 4.36l3.25-2.5z"
+            />
+
+            <path
+                fill="#EA4335"
+                d="M12 6.11c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.2 14.63 2.25 12 2.25a9.75 9.75 0 0 0-8.71 5.39l3.25 2.5C7.31 7.83 9.46 6.11 12 6.11z"
+            />
+                            </svg>
+
+                            <span>
+                                Continue with Google
+                            </span>
+
+                        </button>
+
+
+                        <!-- FACEBOOK -->
+                        <button
+                            type="button"
+                            class="social-login-btn facebook-login-btn"
+                            aria-label="Continue with Facebook"
+                        >
+
+                            <i
+                                class="fab fa-facebook-f"
+                                aria-hidden="true"
+                            ></i>
+
+                            <span>
+                                Continue with Facebook
+                            </span>
+
+                        </button>
+
+
+                        <!-- APPLE -->
+                        <button
+                            type="button"
+                            class="social-login-btn apple-login-btn"
+                            aria-label="Continue with Apple"
+                        >
+
+                            <i
+                                class="fab fa-apple"
+                                aria-hidden="true"
+                            ></i>
+
+                            <span>
+                                Continue with Apple
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <!-- REGISTER -->
+                    <p class="login-register-text">
+
+                        Don't have an account?
+
+                        <a
+                            href="register.html"
+                            class="login-register-link"
+                        >
+                            Create an Account
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <!-- =============================================
+                 WELCOME PANEL
+            ============================================== -->
+
+            <div class="login-welcome-panel">
+
+                <div class="login-welcome-content">
+
+                    <span class="login-welcome-eyebrow">
+                        YOUR WORKSPACE STARTS HERE
+                    </span>
+
+                    <h2 class="login-welcome-title">
+                        Everything You Need for Your Workspace
+                    </h2>
+
+                    <p class="login-welcome-description">
+                        Access your account, manage your orders,
+                        discover trusted stationery brands, and keep
+                        your workspace essentials within reach.
+                    </p>
+
+                    <a
+                        href="categories.html"
+                        class="secondary-btn login-shop-btn"
+                    >
+                        <span>
+                            Shop Categories
+                        </span>
+
+                        <i
+                            class="fas fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+ <script src="js/script.js"></script>
+
+</body>
+
+</html>
