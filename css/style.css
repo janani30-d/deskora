@@ -26278,3 +26278,1756 @@ body.dark-mode .contact-map-directions-btn:hover {
     border-color: var(--primary-light);
     color: #FFFFFF;
 }
+
+
+
+
+
+
+/* =========================================================
+   BRANDS SECTION - LOGO BOX CONSISTENCY
+========================================================= */
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.brand-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   LOGO AREA
+--------------------------------------------------------- */
+
+.brand-card .brand-logo {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+
+    background: #F7F1E8;
+    border: 1px solid #E5DDD3;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   LOGO IMAGE
+--------------------------------------------------------- */
+
+.brand-card .brand-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 75px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* ---------------------------------------------------------
+   IF LOGO IS A SPAN / TEXT
+--------------------------------------------------------- */
+
+.brand-card .brand-logo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   CARD CONTENT
+--------------------------------------------------------- */
+
+.brand-card .brand-content {
+    padding: 22px 20px;
+    box-sizing: border-box;
+}
+
+.brand-card .brand-content h3 {
+    margin: 0 0 10px;
+    color: var(--text-color);
+}
+
+.brand-card .brand-content p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .brand-card .brand-logo {
+    background: #332C28;
+    border-color: #4A403A;
+}
+
+body.dark-mode .brand-card .brand-content h3 {
+    color: #F7F1E8;
+}
+
+body.dark-mode .brand-card .brand-content p {
+    color: #B9ADA4;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .brands-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .brand-card .brand-logo {
+        height: 130px;
+    }
+
+    .brand-card .brand-logo img {
+        max-width: 72%;
+        max-height: 70px;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .brands-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .brand-card .brand-logo {
+        height: 125px;
+        padding: 20px;
+    }
+
+    .brand-card .brand-logo img {
+        max-width: 72%;
+        max-height: 65px;
+    }
+
+    .brand-card .brand-content {
+        padding: 20px 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 599px) {
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .brand-card .brand-logo {
+        height: 120px;
+        padding: 18px;
+    }
+
+    .brand-card .brand-logo img {
+        max-width: 70%;
+        max-height: 65px;
+    }
+
+    .brand-card .brand-content {
+        padding: 18px 16px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 374px) {
+
+    .brands-grid {
+        gap: 12px;
+    }
+
+    .brand-card .brand-logo {
+        height: 110px;
+        padding: 16px;
+    }
+
+    .brand-card .brand-logo img {
+        max-height: 58px;
+    }
+
+    .brand-card .brand-content {
+        padding: 16px 14px;
+    }
+}
+
+
+/* =========================================================
+   BRANDS - LOGO SIZE & DARK MODE FINAL OVERRIDE
+========================================================= */
+
+.brands-grid .brand-card {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   EQUAL LOGO AREA
+--------------------------------------------------------- */
+
+.brands-grid .brand-card img {
+    display: block !important;
+
+    width: 180px !important;
+    height: 80px !important;
+
+    max-width: 180px !important;
+    max-height: 80px !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    padding: 10px 16px !important;
+    box-sizing: border-box !important;
+
+    background: #FFFFFF !important;
+}
+
+
+/* ---------------------------------------------------------
+   LOGO CONTAINER / FIRST IMAGE AREA
+--------------------------------------------------------- */
+
+.brands-grid .brand-card > div:first-child {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+   Keep logo background white so every logo remains visible
+--------------------------------------------------------- */
+
+body.dark-mode .brands-grid .brand-card img {
+    background: #FFFFFF !important;
+}
+
+
+/* Parker - black logo remains visible on white background */
+
+body.dark-mode .brands-grid .brand-card:first-child img {
+    filter: none !important;
+}
+
+
+/* =========================================================
+   iPAD PRO
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .brands-grid .brand-card img {
+        width: 165px !important;
+        height: 74px !important;
+        max-width: 165px !important;
+        max-height: 74px !important;
+    }
+
+    .brands-grid .brand-card > div:first-child {
+        min-height: 130px;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .brands-grid .brand-card img {
+        width: 160px !important;
+        height: 70px !important;
+        max-width: 160px !important;
+        max-height: 70px !important;
+    }
+
+    .brands-grid .brand-card > div:first-child {
+        min-height: 125px;
+        padding: 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 599px) {
+
+    .brands-grid .brand-card img {
+        width: 155px !important;
+        height: 68px !important;
+        max-width: 155px !important;
+        max-height: 68px !important;
+    }
+
+    .brands-grid .brand-card > div:first-child {
+        min-height: 115px;
+        padding: 16px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 374px) {
+
+    .brands-grid .brand-card img {
+        width: 145px !important;
+        height: 64px !important;
+        max-width: 145px !important;
+        max-height: 64px !important;
+    }
+
+    .brands-grid .brand-card > div:first-child {
+        min-height: 108px;
+        padding: 14px;
+    }
+}
+
+
+
+
+/* =========================================================
+   CUSTOMER REVIEWS - FINAL SPACING OVERRIDE
+   Review text moves down
+   Customer profile position stays unchanged
+========================================================= */
+
+.customer-review-card .customer-review-top {
+    transform: translateY(25px) !important;
+}
+
+
+/* =========================================================
+   iPAD PRO + iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .customer-review-card .customer-review-top {
+        transform: translateY(18px) !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 599px) {
+
+    .customer-review-card .customer-review-top {
+        transform: translateY(12px) !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 374px) {
+
+    .customer-review-card .customer-review-top {
+        transform: translateY(10px) !important;
+    }
+}
+
+/* =========================================================
+   CUSTOMER REVIEWS - REDUCE GAP ONLY
+   Keep stars, verified label and profile unchanged
+========================================================= */
+
+/* Remove previous movement */
+.customer-review-card .customer-review-top {
+    transform: none !important;
+}
+
+
+/* Move ONLY the review text downward */
+.customer-review-card .customer-review-text {
+    transform: translateY(35px) !important;
+}
+
+
+/* =========================================================
+   iPAD PRO + iPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .customer-review-card .customer-review-text {
+        transform: translateY(22px) !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 599px) {
+
+    .customer-review-card .customer-review-text {
+        transform: translateY(15px) !important;
+    }
+}
+
+
+
+
+/* Writing Type Label - White */
+.writing-type-card .writing-type-label {
+    color: #FFFFFF !important;
+}
+
+
+/* Writing Purpose Label - White */
+.writing-purpose-card .writing-purpose-label {
+    color: #FFFFFF !important;
+}
+
+/* Filing Type Label - White */
+.filing-type-card .filing-type-label {
+    color: #FFFFFF !important;
+}
+
+
+
+
+/* =========================================================
+   NOTEBOOK TYPES - SIMPLE TABLET ALIGNMENT
+========================================================= */
+
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+    .notebook-types-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 18px !important;
+    }
+
+    .notebook-type-card {
+        flex: 0 0 calc(33.333% - 12px) !important;
+        width: calc(33.333% - 12px) !important;
+        max-width: none !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Last two cards */
+    .notebook-type-card:nth-child(4),
+    .notebook-type-card:nth-child(5) {
+        flex-basis: calc(33.333% - 12px) !important;
+    }
+}
+
+
+/* iPad Mini */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .notebook-types-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 16px !important;
+    }
+
+    .notebook-type-card {
+        flex: 0 0 calc(50% - 8px) !important;
+        width: calc(50% - 8px) !important;
+        max-width: none !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Last card */
+    .notebook-type-card:nth-child(5) {
+        flex-basis: calc(50% - 8px) !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   NOTEBOOKS PURPOSE - 5 CARD LAYOUT
+========================================================= */
+
+/* ---------------------------------------------------------
+   DESKTOP - 5 CARDS IN ONE ROW
+--------------------------------------------------------- */
+
+@media (min-width: 1200px) {
+
+    .notebooks-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .notebooks-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        grid-column: auto !important;
+        margin: 0 !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   iPAD PRO - 3 + 2
+--------------------------------------------------------- */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .notebooks-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+
+    .notebooks-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+    }
+
+    .notebooks-purpose-card:nth-child(1) {
+        grid-column: span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(2) {
+        grid-column: span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(3) {
+        grid-column: span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   iPAD MINI - 2 + 2 + 1
+--------------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .notebooks-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .notebooks-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE - 1 COLUMN
+--------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .notebooks-purpose-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+        width: 100% !important;
+    }
+
+    .notebooks-purpose-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        grid-column: auto !important;
+        margin: 0 !important;
+    }
+}
+
+
+
+/* =========================================================
+   NOTEBOOK PURPOSE - EQUAL CARD ALIGNMENT
+========================================================= */
+
+.notebooks-purpose-grid {
+    display: grid !important;
+    align-items: start !important;
+}
+
+.notebooks-purpose-card {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    align-self: start !important;
+    transform: none !important;
+}
+
+
+/* =========================================================
+   DESKTOP - 5 EQUAL CARDS IN ONE ROW
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .notebooks-purpose-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+    }
+
+    .notebooks-purpose-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD PRO - 3 + 2
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .notebooks-purpose-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        align-items: start !important;
+    }
+
+    .notebooks-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin-top: 0 !important;
+        align-self: start !important;
+    }
+
+    .notebooks-purpose-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .notebooks-purpose-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI - 2 + 2 + 1
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .notebooks-purpose-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        align-items: start !important;
+    }
+
+    .notebooks-purpose-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin-top: 0 !important;
+        align-self: start !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .notebooks-purpose-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+        align-items: start !important;
+    }
+
+    .notebooks-purpose-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin-top: 0 !important;
+        align-self: start !important;
+    }
+}
+
+
+/* =========================================================
+   FIX PLANNING CARD HEADING ALIGNMENT
+========================================================= */
+
+.notebooks-purpose-card:nth-child(3) .notebooks-purpose-card-title {
+    margin-top: 0 !important;
+}
+
+.notebooks-purpose-card:nth-child(3) .notebooks-purpose-label {
+    display: block !important;
+    min-height: 18px !important;
+    margin-bottom: 10px !important;
+}
+/* 20px */
+.notebooks-purpose-card:nth-child(3) .notebooks-purpose-content {
+    transform: translateY(20px) !important;
+}
+
+/* =========================================================
+   FIX PLANNING CARD - MOVE CONTENT DOWN
+========================================================= */
+
+.notebooks-purpose-card:nth-child(3) .notebooks-purpose-content,
+.notebooks-purpose-card:nth-child(3):hover .notebooks-purpose-content {
+    transform: translateY(70px) !important;
+}
+
+
+
+/* =========================================================
+   FILING TYPES - 3 + 2 ALIGNMENT
+========================================================= */
+
+@media (min-width: 1024px) {
+
+    .filing-types-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .filing-type-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* First row - 3 cards */
+    .filing-type-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Second row - 2 centered cards */
+    .filing-type-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* =========================================================
+   TABLET / iPAD MINI - 3 + 2
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .filing-types-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    .filing-type-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .filing-type-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .filing-type-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE - 1 CARD PER ROW
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .filing-types-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+    }
+
+    .filing-type-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   FILING PURPOSE - 3 + 2 ALIGNMENT
+========================================================= */
+
+@media (min-width: 1024px) {
+
+    .filing-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: start !important;
+    }
+
+    .filing-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        align-self: start !important;
+        grid-column: auto !important;
+    }
+
+    /* First row - 3 cards */
+    .filing-purpose-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Second row - 2 cards centered */
+    .filing-purpose-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI - 3 + 2
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .filing-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        align-items: start !important;
+    }
+
+    .filing-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        align-self: start !important;
+        grid-column: auto !important;
+    }
+
+    .filing-purpose-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .filing-purpose-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE - ONE CARD PER ROW
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .filing-purpose-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+        width: 100% !important;
+    }
+
+    .filing-purpose-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   DESK TYPES — 3 + 2 ALIGNMENT
+========================================================= */
+
+/* iPad Pro + Desktop */
+@media (min-width: 768px) {
+
+    .desk-types-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: start !important;
+    }
+
+    .desk-type-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+    }
+
+    /* First row — 3 cards */
+    .desk-type-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Second row — 2 cards centered */
+    .desk-type-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+    .desk-type-card-wide {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+========================================================= */
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    .desk-types-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: start !important;
+    }
+
+    .desk-type-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+    }
+
+    /* First row */
+    .desk-type-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Second row centered */
+    .desk-type-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .desk-type-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+    .desk-type-card-wide {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — ONE CARD PER ROW
+========================================================= */
+
+@media (max-width: 599px) {
+
+    .desk-types-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .desk-type-card,
+    .desk-type-card-wide {
+        grid-column: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* =========================================================
+   BULK ORDER SUBMIT BUTTON — DARK MODE
+========================================================= */
+
+body.dark-mode .bulk-order-submit-btn {
+    background: #D97958 !important;
+    color: #F7F1E8 !important;
+    border-color: #D97958 !important;
+}
+
+body.dark-mode .bulk-order-submit-btn i {
+    color: #F7F1E8 !important;
+}
+
+body.dark-mode .bulk-order-submit-btn:hover {
+    background: #F7F1E8 !important;
+    color: #2B2522 !important;
+    border-color: #F7F1E8 !important;
+}
+
+body.dark-mode .bulk-order-submit-btn:hover i {
+    color: #2B2522 !important;
+}
+
+/* =========================================================
+   BULK ORDER SUBMIT BUTTON — LIGHT MODE
+========================================================= */
+
+.bulk-order-submit-btn {
+    background: var(--primary-color) !important;
+    color: #FFFFFF !important;
+    border-color: var(--primary-color) !important;
+}
+
+.bulk-order-submit-btn i {
+    color: #FFFFFF !important;
+}
+
+.bulk-order-submit-btn:hover {
+    background: var(--primary-dark) !important;
+    color: #FFFFFF !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.bulk-order-submit-btn:hover i {
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   NEW ARRIVALS CTA — HOVER FIX
+========================================================= */
+
+.new-arrivals-cta-primary {
+    background: var(--primary-color) !important;
+    color: #FFFFFF !important;
+    border-color: var(--primary-color) !important;
+}
+
+.new-arrivals-cta-primary i {
+    color: #FFFFFF !important;
+}
+
+.new-arrivals-cta-primary:hover {
+    background: var(--surface-color) !important;
+    color: var(--primary-color) !important;
+    border-color: var(--surface-color) !important;
+}
+
+.new-arrivals-cta-primary:hover i {
+    color: var(--primary-color) !important;
+}
+
+/* NEW ARRIVALS CTA — LIGHT MODE BORDER */
+
+.new-arrivals-cta-primary {
+    background: var(--primary-color) !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.new-arrivals-cta-primary i {
+    color: #FFFFFF !important;
+}
+
+.new-arrivals-cta-primary:hover {
+    background: var(--surface-color) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--surface-color) !important;
+}
+
+.new-arrivals-cta-primary:hover i {
+    color: var(--primary-color) !important;
+}
+
+/* =========================================================
+   CORPORATE CTA BUTTONS
+========================================================= */
+
+.corporate-cta-primary {
+    background: #FFFFFF !important;
+    color: var(--primary-color) !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.corporate-cta-primary i {
+    color: var(--primary-color) !important;
+}
+
+.corporate-cta-primary:hover {
+    background: var(--surface-color) !important;
+    color: var(--primary-dark) !important;
+    border-color: var(--surface-color) !important;
+}
+
+.corporate-cta-primary:hover i {
+    color: var(--primary-dark) !important;
+}
+
+
+/* Secondary button */
+
+.corporate-cta-secondary {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.corporate-cta-secondary i {
+    color: #FFFFFF !important;
+}
+
+.corporate-cta-secondary:hover {
+    background: #FFFFFF !important;
+    color: var(--primary-color) !important;
+    border-color: #FFFFFF !important;
+}
+
+.corporate-cta-secondary:hover i {
+    color: var(--primary-color) !important;
+}
+
+/* =========================================================
+   NEW ARRIVALS CTA BUTTONS
+========================================================= */
+
+/* PRIMARY — Shop New Arrivals */
+.new-arrivals-cta-primary {
+    background: #FFFFFF !important;
+    color: var(--primary-color) !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.new-arrivals-cta-primary i {
+    color: var(--primary-color) !important;
+}
+
+.new-arrivals-cta-primary:hover {
+    background: var(--surface-color) !important;
+    color: var(--primary-dark) !important;
+    border-color: var(--surface-color) !important;
+}
+
+.new-arrivals-cta-primary:hover i {
+    color: var(--primary-dark) !important;
+}
+
+
+/* SECONDARY — Explore All Categories */
+.new-arrivals-cta-secondary {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.new-arrivals-cta-secondary i {
+    color: #FFFFFF !important;
+}
+
+.new-arrivals-cta-secondary:hover {
+    background: #FFFFFF !important;
+    color: var(--primary-color) !important;
+    border-color: #FFFFFF !important;
+}
+
+.new-arrivals-cta-secondary:hover i {
+    color: var(--primary-color) !important;
+}
+
+
+
+/* =========================================================
+   FEATURED BRANDS - LOGO ALIGNMENT FIX
+========================================================= */
+
+.featured-brand-logo {
+    width: 100% !important;
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.featured-brand-logo-image {
+    width: 150px !important;
+    height: 70px !important;
+
+    max-width: 150px !important;
+    max-height: 70px !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Parker logo - white image background in dark mode */
+body.dark-mode .featured-brand-logo-image[src*="brand-parker"] {
+    background: #FFFFFF !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    filter: none !important;
+}
+
+
+/* Reynolds logo - white background in dark mode */
+body.dark-mode .featured-brand-logo-image[src*="brand-reynolds"] {
+    background: #FFFFFF !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    filter: none !important;
+}
+
+
+
+
+/* =========================================================
+   BRANDS BY CATEGORY
+   3 CARDS TOP + 2 CARDS CENTERED
+========================================================= */
+
+@media (min-width: 768px) {
+
+    .brands-category-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: start !important;
+    }
+
+    /* Row 1 */
+    .brands-category-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .brands-category-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .brands-category-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Row 2 - centered */
+    .brands-category-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .brands-category-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+    .brands-category-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-card-wide {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .brands-category-image-wrapper,
+    .brands-category-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   CONTACT HERO BUTTONS - DARK MODE HOVER
+========================================================= */
+
+body.dark-mode .contact-hero-btn.primary-btn:hover {
+    background: #F7F1E8 !important;
+    color: #C65D3A !important;
+    border-color: #F7F1E8 !important;
+}
+
+body.dark-mode .contact-hero-btn.primary-btn:hover i {
+    color: #C65D3A !important;
+}
+
+
+/* Secondary button */
+body.dark-mode .contact-hero-btn.secondary-btn {
+    background: transparent !important;
+    color: #F7F1E8 !important;
+    border-color: #F7F1E8 !important;
+}
+
+body.dark-mode .contact-hero-btn.secondary-btn i {
+    color: #F7F1E8 !important;
+}
+
+body.dark-mode .contact-hero-btn.secondary-btn:hover {
+    background: #F7F1E8 !important;
+    color: #C65D3A !important;
+    border-color: #F7F1E8 !important;
+}
+
+body.dark-mode .contact-hero-btn.secondary-btn:hover i {
+    color: #C65D3A !important;
+}
+
+
+
+
+/* =========================================================
+   LOGIN WELCOME PANEL - REDUCE TOP & BOTTOM SPACE
+========================================================= */
+
+.login-welcome-panel {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 50px 56px !important;
+    box-sizing: border-box !important;
+}
+
+.login-welcome-content {
+    width: 100% !important;
+    max-width: 620px !important;
+    margin: 0 !important;
+}
+
+.login-welcome-eyebrow {
+    margin-bottom: 16px !important;
+}
+
+.login-welcome-title {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+}
+
+.login-welcome-description {
+    margin-top: 0 !important;
+    margin-bottom: 26px !important;
+}
+
+.login-shop-btn {
+    margin-top: 0 !important;
+}
+/* =========================================================
+   LOGIN WELCOME PANEL - REDUCE EXCESS HEIGHT
+========================================================= */
+
+.login-welcome-panel {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 70px 70px !important;
+    box-sizing: border-box !important;
+}
+
+.login-welcome-content {
+    max-width: 620px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+}
+
+/* =========================================================
+   LOGIN WELCOME BENEFITS
+========================================================= */
+
+.login-welcome-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 28px 0 30px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.login-welcome-benefit {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.login-welcome-benefit-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(247, 241, 232, 0.35);
+    border-radius: 6px;
+
+    color: #D9A441;
+    font-size: 16px;
+}
+
+.login-welcome-benefit-content {
+    min-width: 0;
+}
+
+.login-welcome-benefit-content h3 {
+    margin: 0 0 3px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #F7F1E8;
+}
+
+.login-welcome-benefit-content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #B9ADA4;
+}
+
+
+/* =========================================================
+   LOGIN - FORGOT PASSWORD BELOW PASSWORD FIELD
+========================================================= */
+
+.login-password-label {
+    display: block !important;
+}
+
+.login-forgot-row {
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+.login-forgot-link {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
+
+.login-forgot-link:hover {
+    color: var(--primary-dark) !important;
+    text-decoration: underline !important;
+}
+
+.login-options {
+    margin-top: 18px !important;
+}
+
+
+/* =========================================================
+   LOGIN - PASSWORD OPTIONS
+========================================================= */
+
+.login-options-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.login-remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.login-remember input {
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.login-remember span {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
+
+.login-forgot-link {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.login-forgot-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   REMEMBER ME - CHECKBOX + TEXT
+========================================================= */
+
+.login-remember {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.login-remember input[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    width: 20px !important;
+    height: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 1px solid #8A837D !important;
+    border-radius: 3px !important;
+
+    background: #FFFFFF !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 20px !important;
+    cursor: pointer;
+}
+
+.login-remember input[type="checkbox"]:checked {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.login-remember input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.login-remember span {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+
+    color: var(--primary-color) !important;
+}

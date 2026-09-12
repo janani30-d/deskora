@@ -133,7 +133,7 @@
                     aria-label="Switch text direction"
                 >
                     <i
-                        class="fas fa-align-right"
+                        class="fas fa-arrow-right-arrow-left"
                         aria-hidden="true"
                     ></i>
                    
@@ -219,78 +219,78 @@
                         >
 
                     </div>
+                    <!-- =================================================
+     PASSWORD
+================================================== -->
+
+<div class="login-form-group">
+
+    <label for="loginPassword">
+        Password
+        <span aria-hidden="true">*</span>
+    </label>
+
+    <div class="login-password-field">
+
+        <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+        >
+
+        <button
+            type="button"
+            class="login-password-toggle"
+            id="loginPasswordToggle"
+            aria-label="Show password"
+            aria-controls="loginPassword"
+            aria-pressed="false"
+        >
+            <i
+                class="fas fa-eye"
+                aria-hidden="true"
+            ></i>
+        </button>
+
+    </div>
 
 
-                    <!-- PASSWORD -->
-                    <div class="login-form-group">
+    <!-- =================================================
+         PASSWORD OPTIONS
+    ================================================== -->
 
-                        <div class="login-password-label">
+    <div class="login-options-row">
 
-                            <label for="loginPassword">
-                                Password
-                                <span aria-hidden="true">*</span>
-                            </label>
+        <!-- REMEMBER ME -->
+        <label class="login-remember">
 
-                            <a
-                                href="#"
-                                class="login-forgot-link"
-                            >
-                                Forgot Password?
-                            </a>
+            <input
+                type="checkbox"
+                id="loginRemember"
+                name="remember"
+            >
 
-                        </div>
+            <span>
+                Remember me
+            </span>
 
-
-                        <div class="login-password-field">
-
-                            <input
-                                type="password"
-                                id="loginPassword"
-                                name="password"
-                                placeholder="Enter your password"
-                                autocomplete="current-password"
-                                required
-                            >
-
-                            <button
-                                type="button"
-                                class="login-password-toggle"
-                                id="loginPasswordToggle"
-                                aria-label="Show password"
-                                aria-controls="loginPassword"
-                                aria-pressed="false"
-                            >
-                                <i
-                                    class="fas fa-eye"
-                                    aria-hidden="true"
-                                ></i>
-                            </button>
-
-                        </div>
-
-                    </div>
+        </label>
 
 
-                    <!-- REMEMBER ME -->
-                    <div class="login-options">
+        <!-- FORGOT PASSWORD -->
+        <a
+            href="#"
+            class="login-forgot-link"
+        >
+            Forgot Password?
+        </a>
 
-                        <label class="login-remember">
+    </div>
 
-                            <input
-                                type="checkbox"
-                                id="loginRemember"
-                                name="remember"
-                            >
-
-                            <span>
-                                Remember me
-                            </span>
-
-                        </label>
-
-                    </div>
-
-
+</div>
                     <!-- LOGIN BUTTON -->
                     <button
                         type="submit"
@@ -443,7 +443,51 @@
                         discover trusted stationery brands, and keep
                         your workspace essentials within reach.
                     </p>
+                    <!-- WELCOME BENEFITS -->
+<div class="login-welcome-benefits">
 
+    <div class="login-welcome-benefit">
+
+        <div class="login-welcome-benefit-icon">
+            <i class="fas fa-box-open" aria-hidden="true"></i>
+        </div>
+
+        <div class="login-welcome-benefit-content">
+            <h3>Easy Order Management</h3>
+            <p>Track and manage your stationery orders with ease.</p>
+        </div>
+
+    </div>
+
+
+    <div class="login-welcome-benefit">
+
+        <div class="login-welcome-benefit-icon">
+            <i class="fas fa-tags" aria-hidden="true"></i>
+        </div>
+
+        <div class="login-welcome-benefit-content">
+            <h3>Great Value</h3>
+            <p>Discover reliable stationery at practical prices.</p>
+        </div>
+
+    </div>
+
+
+    <div class="login-welcome-benefit">
+
+        <div class="login-welcome-benefit-icon">
+            <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+
+        <div class="login-welcome-benefit-content">
+            <h3>Trusted Brands</h3>
+            <p>Shop quality products from brands you can count on.</p>
+        </div>
+
+    </div>
+
+</div>
                     <a
                         href="categories.html"
                         class="secondary-btn login-shop-btn"
