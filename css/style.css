@@ -28031,3 +28031,298 @@ body.dark-mode .contact-hero-btn.secondary-btn:hover i {
 
     color: var(--primary-color) !important;
 }
+
+
+
+
+/* =========================================================
+   WELCOME PANEL LOGO
+========================================================= */
+
+.login-welcome-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    margin: 0 0 28px;
+}
+
+.login-welcome-logo-image {
+    width: 135px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+
+
+
+/* =========================================================
+   REGISTER WELCOME LOGO
+========================================================= */
+
+.register-welcome-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    margin: 0 0 28px;
+}
+
+.register-welcome-logo-image {
+    width: 135px;
+    height: auto;
+    max-width: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+
+.login-welcome-logo {
+    transform: translateY(-25px) !important;
+}
+
+
+
+/* Move Login Welcome Logo Slightly Up */
+.login-welcome-content > .login-logo-link {
+    transform: translateY(-15px) !important;
+}
+
+
+
+/* =========================================================
+   LOGIN WELCOME PANEL
+   LOGO UP + EYEBROW CENTER
+========================================================= */
+
+/* Move logo upward */
+.login-welcome-content > .login-logo-link {
+    transform: translateY(-25px) !important;
+}
+
+/* Center eyebrow */
+.login-welcome-eyebrow {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+
+
+
+/* =========================================================
+   REGISTER WELCOME PANEL
+   LOGO UP + EYEBROW CENTER
+========================================================= */
+
+/* Move logo upward */
+.register-welcome-content > .register-logo-link {
+    transform: translateY(-25px) !important;
+}
+
+/* Center eyebrow */
+.register-welcome-eyebrow {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+
+
+
+/* =========================================================
+   NEW ARRIVALS - CATEGORY GRID
+   3 CARDS TOP + 2 CARDS CENTERED BELOW
+========================================================= */
+
+@media (min-width: 1024px) {
+
+    .new-arrivals-category-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: start !important;
+    }
+
+    /* First row - 3 cards */
+    .new-arrivals-category-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .new-arrivals-category-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .new-arrivals-category-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+    /* Second row - 2 cards centered */
+    .new-arrivals-category-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .new-arrivals-category-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+    .new-arrivals-category-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+
+}
+
+
+/* Stationery inspiration label */
+.stationery-inspiration-label {
+    color: #FFFFFF !important;
+}
+
+
+/* Corporate Workspace label */
+.corporate-workspace-label {
+    color: #FFFFFF !important;
+}
+
+
+.students-professionals-label {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+
+/* =========================================================
+   CUSTOMER REVIEWS - WIDTH & SPACING FIX
+========================================================= */
+
+.customer-reviews-section {
+    padding: 55px 20px !important;
+}
+
+.customer-reviews-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.customer-reviews-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+}
+
+.customer-review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 360px !important;
+    padding: 38px 40px !important;
+    box-sizing: border-box !important;
+}
+
+/* Remove excessive vertical spacing inside cards */
+.customer-review-top {
+    margin-bottom: 35px !important;
+}
+
+.customer-review-text {
+    margin: 0 !important;
+}
+
+.customer-review-customer {
+    margin-top: 45px !important;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .customer-reviews-section {
+        padding: 45px 20px !important;
+    }
+
+    .customer-reviews-container {
+        max-width: 900px !important;
+    }
+
+    .customer-reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+    }
+
+    .customer-review-card {
+        height: 350px !important;
+        padding: 32px !important;
+    }
+
+    /* Third card stays centered */
+    .customer-review-card:nth-child(3) {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 9px) !important;
+        justify-self: center !important;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .customer-reviews-section {
+        padding: 40px 16px !important;
+    }
+
+    .customer-reviews-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .customer-review-card,
+    .customer-review-card:nth-child(3) {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 300px !important;
+        padding: 28px 24px !important;
+        grid-column: auto !important;
+    }
+
+    .customer-review-top {
+        margin-bottom: 25px !important;
+    }
+
+    .customer-review-customer {
+        margin-top: 35px !important;
+    }
+}
+
+
+/* =========================================================
+   CUSTOMER REVIEW - REDUCE TOP CONTENT GAP
+========================================================= */
+
+.customer-review-top {
+    margin-bottom: 15px !important;
+}
+
+.customer-review-text {
+    margin-top: 0 !important;
+}

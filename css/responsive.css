@@ -37118,3 +37118,414 @@ html[dir="rtl"] .contact-map-directions-btn:hover i {
     }
 
 }
+
+
+
+
+/* =========================================================
+   IPAD MINI ONLY — 768px
+   CENTER LAST CARD
+========================================================= */
+
+@media screen and (width: 768px) {
+
+    .shop-category-grid .category-card:last-child {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        width: calc(50% - 8px) !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   IPAD MINI ONLY — 768px
+   CENTER LAST CUSTOMER REVIEW
+========================================================= */
+
+@media screen and (width: 768px) {
+
+    .customer-reviews-grid .customer-review-card:last-child {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        width: calc(50% - 8px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   IPAD MINI — 768px ONLY
+   NOTEBOOK TYPES: 2 + 2 + 1
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+    .notebook-types-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .notebook-types-grid .notebook-type-card {
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ONLY LAST CARD */
+    .notebook-types-grid .notebook-type-card:nth-child(5) {
+        grid-column: 1 / 3 !important;
+        width: 50% !important;
+        justify-self: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   IPAD MINI ONLY — NOTEBOOK PURPOSE
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+    /* ---------------------------------------------
+       1. CENTER LAST CARD
+    --------------------------------------------- */
+
+    .notebooks-purpose-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .notebooks-purpose-grid .notebooks-purpose-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .notebooks-purpose-grid .notebooks-purpose-card:nth-child(5) {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 8px) !important;
+        justify-self: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* ---------------------------------------------
+       2. ADD BOTTOM SPACE AFTER CARD PARAGRAPH
+    --------------------------------------------- */
+
+    .notebooks-purpose-card .notebooks-purpose-card-text {
+        margin-bottom: 18px !important;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+    .notebooks-purpose-card:nth-child(3) .notebooks-purpose-card-text {
+        margin-bottom: 36px !important;
+    }
+
+}
+
+
+/* =========================================================
+   IPAD MINI ONLY — NOTEBOOK PURPOSE PARAGRAPH SPACING
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+    .notebooks-purpose-card .notebooks-purpose-card-text {
+        margin-bottom: 28px !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   IPAD MINI + IPAD PRO
+   NEW ARRIVALS — CENTER LAST CARD
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .new-arrivals-featured-section
+    .new-arrivals-featured-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .new-arrivals-featured-grid
+    .new-arrivals-featured-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Last card centered */
+    .new-arrivals-featured-grid
+    .new-arrivals-featured-card:last-child {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 9px) !important;
+        justify-self: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+
+
+/* =========================================================
+   IPAD MINI + IPAD PRO
+   CENTER LAST FEATURED PRODUCT
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .new-arrivals-featured-product:last-child {
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}
+
+/* =========================================================
+   NEW ARRIVALS FEATURED PRODUCTS
+   IPAD MINI + IPAD PRO
+   THIRD CARD — TRUE CENTER
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .new-arrivals-featured-products {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+
+    /* Only the third card */
+    .new-arrivals-featured-products
+    .new-arrivals-featured-product:nth-child(3) {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        transform: none !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   FINAL FIX — BRANDS BY CATEGORY
+   REMOVE OLD GRID OVERRIDES
+========================================================= */
+
+
+/* =========================================================
+   IPAD PRO + IPAD MINI
+   768px — 1199px
+   3 CARDS TOP + 2 CARDS BOTTOM
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .brands-category-section {
+        width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* RESET ALL OLD CARD POSITIONS */
+
+    .brands-category-card {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+        box-sizing: border-box !important;
+        justify-self: stretch !important;
+    }
+
+
+    /* =====================================================
+       FIRST ROW — 3 CARDS
+    ===================================================== */
+
+    .brands-category-grid
+    .brands-category-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .brands-category-grid
+    .brands-category-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+    }
+
+    .brands-category-grid
+    .brands-category-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+    }
+
+
+    /* =====================================================
+       SECOND ROW — 2 CARDS CENTERED
+    ===================================================== */
+
+    .brands-category-grid
+    .brands-category-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .brands-category-grid
+    .brands-category-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+
+    /* RESET WIDE CARD */
+
+    .brands-category-grid
+    .brands-category-card-wide {
+        width: 100% !important;
+        max-width: none !important;
+        grid-column: 4 / span 2 !important;
+        justify-self: stretch !important;
+        margin: 0 !important;
+    }
+
+
+    /* IMAGE */
+
+    .brands-category-image-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-image {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   BELOW 768px
+   ONE CARD PER ROW
+========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    .brands-category-section {
+        width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 14px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-grid
+    .brands-category-card,
+    .brands-category-grid
+    .brands-category-card-wide {
+        grid-column: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-self: stretch !important;
+        transform: none !important;
+        box-sizing: border-box !important;
+    }
+
+    .brands-category-image-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .brands-category-image {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+}
