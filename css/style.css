@@ -28326,3 +28326,167 @@ body.dark-mode .contact-hero-btn.secondary-btn:hover i {
 .customer-review-text {
     margin-top: 0 !important;
 }
+
+
+/* =========================================================
+   FEATURED PRODUCTS — 4 IN ONE ROW
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .featured-products-grid {
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .featured-products-grid .product-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        grid-column: auto !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   SCROLL TO TOP BUTTON
+========================================================= */
+
+.scroll-top-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #ffffff;
+}
+
+.scroll-top-btn i {
+    color: inherit;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .scroll-top-btn {
+    background: var(--primary-color);
+    color: #F7F1E8;
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .scroll-top-btn:hover {
+    background: #F7F1E8;
+    color: #2B2522;
+    border-color: #F7F1E8;
+}
+
+
+
+
+
+/* =========================================================
+   FIX — FEATURED NEW ARRIVALS
+   DESKTOP: 3 EQUAL CARDS IN ONE ROW
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    #featuredNewProducts {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 28px !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 28px auto 0 !important;
+        padding: 0 !important;
+    }
+
+    #featuredNewProducts > article.new-arrivals-featured-product {
+        grid-column: 1 / span 1 !important;
+        grid-row: auto !important;
+
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+    }
+
+    #featuredNewProducts > article.new-arrivals-featured-product:nth-child(1),
+    #featuredNewProducts > article.new-arrivals-featured-product:nth-child(2),
+    #featuredNewProducts > article.new-arrivals-featured-product:nth-child(3) {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    #featuredNewProducts
+    .new-arrivals-featured-product-image-wrapper {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #featuredNewProducts
+    .new-arrivals-featured-product-image {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        object-fit: cover !important;
+    }
+
+    #featuredNewProducts
+    .new-arrivals-featured-product-content {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
