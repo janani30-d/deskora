@@ -37744,3 +37744,345 @@ html[dir="rtl"] .contact-map-directions-btn:hover i {
     }
 
 }
+
+
+
+
+
+/* =========================================================
+   AUTH CONTROLS
+   MOBILE — RTL + DARK MODE ON LEFT
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-controls,
+    .register-controls {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        margin-left: 0 !important;
+        margin-right: auto !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .login-control-btn,
+    .register-control-btn {
+        margin: 0 !important;
+        flex: 0 0 auto !important;
+    }
+
+    /* Keep controls on LEFT even when RTL is active */
+    html[dir="rtl"] .login-controls,
+    html[dir="rtl"] .register-controls {
+        direction: ltr !important;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   AUTH CONTROLS
+   MOBILE — RTL + DARK MODE ON LEFT
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .login-controls,
+    .register-controls {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        margin-left: 0 !important;
+        margin-right: auto !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .login-control-btn,
+    .register-control-btn {
+        margin: 0 !important;
+        flex: 0 0 auto !important;
+    }
+
+    /* Keep controls on LEFT even when RTL is active */
+    html[dir="rtl"] .login-controls,
+    html[dir="rtl"] .register-controls {
+        direction: ltr !important;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE HEADER — LOGO LEFT
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .header-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .logo,
+    .header-logo,
+    .site-logo {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        justify-self: start !important;
+    }
+
+    .logo img,
+    .header-logo img,
+    .site-logo img {
+        display: block !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .hamburger,
+    .menu-toggle,
+    .mobile-menu-toggle {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   LOGIN CONTROLS
+   MOBILE + IPAD MINI + IPAD PRO
+   RTL + DARK MODE → RIGHT SIDE
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .login-controls {
+        width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+
+        gap: 8px !important;
+
+        margin-left: auto !important;
+        margin-right: 0 !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .login-control-btn {
+        flex: 0 0 auto !important;
+
+        margin: 0 !important;
+
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    /* Keep buttons on RIGHT even when RTL is enabled */
+    html[dir="rtl"] .login-controls {
+        direction: ltr !important;
+        justify-content: flex-end !important;
+
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   AUTH CONTROLS
+   RTL + DARK MODE → RIGHT SIDE
+   ALL DEVICES
+========================================================= */
+
+.login-controls {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 8px !important;
+
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.login-control-btn {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+/* Keep controls on RIGHT even in RTL */
+html[dir="rtl"] .login-controls {
+    direction: ltr !important;
+    justify-content: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+
+/* =========================================================
+   REGISTER
+========================================================= */
+
+.register-controls {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 8px !important;
+
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.register-control-btn {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+html[dir="rtl"] .register-controls {
+    direction: ltr !important;
+    justify-content: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+
+
+/* =========================================================
+   BRANDS GRID
+   iPAD PRO ONLY — LAST 2 CARDS CENTERED
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .brands-grid .brand-card:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+    }
+
+    .brands-grid .brand-card:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+    }
+
+}
+
+
+/* =========================================================
+   BRANDS GRID
+   iPAD PRO ONLY
+   3 CARDS + 3 CARDS + LAST 2 CENTERED
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .brands-grid {
+        display: grid !important;
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    /* ROW 1 */
+    .brands-grid .brand-card:nth-child(1) {
+        grid-column: 1 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card:nth-child(2) {
+        grid-column: 3 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card:nth-child(3) {
+        grid-column: 5 / span 2 !important;
+        width: 100% !important;
+    }
+
+    /* ROW 2 */
+    .brands-grid .brand-card:nth-child(4) {
+        grid-column: 1 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card:nth-child(5) {
+        grid-column: 3 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card:nth-child(6) {
+        grid-column: 5 / span 2 !important;
+        width: 100% !important;
+    }
+
+    /* ROW 3 — ONLY LAST TWO CENTERED */
+    .brands-grid .brand-card:nth-child(7) {
+        grid-column: 2 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card:nth-child(8) {
+        grid-column: 4 / span 2 !important;
+        width: 100% !important;
+    }
+
+    .brands-grid .brand-card {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}

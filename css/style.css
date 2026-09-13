@@ -28112,7 +28112,7 @@ body.dark-mode .contact-hero-btn.secondary-btn:hover i {
 .login-welcome-eyebrow {
     display: block !important;
     width: 100% !important;
-    text-align: center !important;
+    text-align: left !important;
 }
 
 
@@ -28132,7 +28132,7 @@ body.dark-mode .contact-hero-btn.secondary-btn:hover i {
 .register-welcome-eyebrow {
     display: block !important;
     width: 100% !important;
-    text-align: center !important;
+    text-align: left !important;
 }
 
 
@@ -28489,4 +28489,35 @@ body.dark-mode .scroll-top-btn:hover {
         width: 100% !important;
         box-sizing: border-box !important;
     }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   CUSTOMER REVIEW AVATAR IMAGES
+========================================================= */
+
+.customer-review-avatar {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.customer-review-avatar-image {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 50% !important;
 }
