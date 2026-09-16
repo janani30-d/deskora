@@ -38086,3 +38086,174 @@ html[dir="rtl"] .register-controls {
         box-sizing: border-box !important;
     }
 }
+
+
+
+
+
+/* =========================================================
+   HOME 1 HERO — CENTER ALIGNMENT
+   ========================================================= */
+
+.hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.hero-content {
+    width: 100% !important;
+    max-width: 850px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.hero-eyebrow,
+.hero-title,
+.hero-description {
+    text-align: center !important;
+}
+
+.hero-description {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 768px) {
+
+    .notebooks-purpose-card:last-child {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        width: calc(50% - 10px) !important;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .login-welcome-content {
+        padding-right: 20px !important;
+    }
+}
+
+/* =========================================================
+   REGISTER — PASSWORD FIELD FIX
+   iPad Mini / Tablet
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .register-password-field {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .register-password-field input {
+        width: 100% !important;
+        padding-right: 48px !important;
+        box-sizing: border-box !important;
+    }
+
+    .register-password-toggle {
+        position: absolute !important;
+        top: 50% !important;
+        right: 12px !important;
+        transform: translateY(-50%) !important;
+
+        width: 30px !important;
+        height: 30px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .register-password-field {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .register-password-field input {
+        width: 100% !important;
+        padding-right: 46px !important;
+        box-sizing: border-box !important;
+    }
+
+    .register-password-toggle {
+        position: absolute !important;
+        top: 50% !important;
+        right: 10px !important;
+        transform: translateY(-50%) !important;
+
+        width: 30px !important;
+        height: 30px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+}
+
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+[dir="rtl"] .register-password-field input {
+    padding-right: 12px !important;
+    padding-left: 48px !important;
+}
+
+[dir="rtl"] .register-password-toggle {
+    right: auto !important;
+    left: 12px !important;
+}
+
+
+/* =========================================================
+   RTL MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    [dir="rtl"] .register-password-field input {
+        padding-right: 12px !important;
+        padding-left: 46px !important;
+    }
+
+    [dir="rtl"] .register-password-toggle {
+        right: auto !important;
+        left: 10px !important;
+    }
+
+}

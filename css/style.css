@@ -28521,3 +28521,59 @@ body.dark-mode .scroll-top-btn:hover {
     object-position: center !important;
     border-radius: 50% !important;
 }
+
+
+
+
+
+
+/* =========================================================
+   DESK BENEFITS IMAGE
+   ========================================================= */
+
+.desk-benefits-image {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.desk-benefits-image img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .desk-benefits-image {
+        margin-top: 25px;
+    }
+
+    .desk-benefits-image img {
+        height: 200px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .desk-benefits-image {
+        margin-top: 24px;
+    }
+
+    .desk-benefits-image img {
+        height: 220px;
+    }
+}
