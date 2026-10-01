@@ -28577,3 +28577,1020 @@ body.dark-mode .scroll-top-btn:hover {
         height: 220px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FEATURED PRODUCTS — VIEW PRODUCT ONLY
+   Override CSS
+========================================================= */
+
+/* Hide Add to Cart button */
+.featured-products-section .product-primary-btn {
+    display: none !important;
+}
+
+
+/* Product card becomes a flexible column */
+.featured-products-section .product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Product content fills the remaining card height */
+.featured-products-section .product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Price + View Product row */
+.featured-products-section .product-bottom {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+/* View Product moves to the right */
+.featured-products-section .product-view-link {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* Make sure the CTA stays at the bottom */
+.featured-products-section .product-description {
+    margin-bottom: 20px;
+}
+
+
+/* Consistent card content spacing */
+.featured-products-section .product-bottom {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .featured-products-section .product-bottom {
+        gap: 10px;
+    }
+
+    .featured-products-section .product-view-link {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FEATURED WRITING PRODUCTS
+   VIEW PRODUCT ONLY — OVERRIDE
+========================================================= */
+
+/* Hide Add to Cart */
+.featured-writing-section .featured-writing-cart-btn {
+    display: none !important;
+}
+
+
+/* Make every product card a flexible column */
+.featured-writing-section .featured-writing-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Product content fills card height */
+.featured-writing-section .featured-writing-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Price stays above the CTA */
+.featured-writing-section .featured-writing-bottom {
+    margin-top: auto;
+}
+
+
+/* CTA container */
+.featured-writing-section .featured-writing-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 18px;
+}
+
+
+/* View Product only */
+.featured-writing-section .featured-writing-view-btn {
+    width: auto;
+    min-width: 120px;
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   KEEP CTA AT THE BOTTOM OF EVERY CARD
+========================================================= */
+
+.featured-writing-section .featured-writing-text {
+    margin-bottom: 20px;
+}
+
+.featured-writing-section .featured-writing-actions {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .featured-writing-section .featured-writing-actions {
+        justify-content: flex-end;
+    }
+
+    .featured-writing-section .featured-writing-view-btn {
+        min-width: 110px;
+    }
+
+}
+/* =========================================================
+   VIEW PRODUCT — RIGHT SIDE ONLY
+========================================================= */
+
+.featured-writing-section .featured-writing-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.featured-writing-section .featured-writing-view-btn {
+    width: auto !important;
+    min-width: 120px;
+    max-width: fit-content;
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+    white-space: nowrap;
+}
+
+
+/* Make sure it does NOT stretch */
+.featured-writing-section .featured-writing-view-btn {
+    flex: 0 0 auto !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FEATURED NOTEBOOKS
+   VIEW PRODUCT ONLY — RIGHT SIDE
+========================================================= */
+
+/* Hide Add to Cart */
+.featured-notebooks-section .notebook-add-to-cart {
+    display: none !important;
+}
+
+
+/* Make product card flexible */
+.featured-notebooks-section .notebook-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Product content fills the card */
+.featured-notebooks-section .notebook-product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Keep price and CTA at bottom */
+.featured-notebooks-section .notebook-product-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+
+/* View Product — small button on right */
+.featured-notebooks-section .notebook-view-product {
+    width: auto !important;
+    min-width: 110px;
+    max-width: fit-content;
+
+    flex: 0 0 auto !important;
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .featured-notebooks-section .notebook-product-actions {
+        justify-content: flex-end;
+    }
+
+    .featured-notebooks-section .notebook-view-product {
+        min-width: 105px;
+        padding: 9px 18px;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   FILING PRODUCTS
+   VIEW PRODUCT ONLY — RIGHT SIDE
+========================================================= */
+
+/* Hide Add to Cart */
+.filing-products-section .filing-product-cart-btn {
+    display: none !important;
+}
+
+
+/* Make each card a flexible column */
+.filing-products-section .filing-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Make content fill available card height */
+.filing-products-section .filing-product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Price + actions stay at bottom */
+.filing-products-section .filing-product-bottom {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+/* Actions move to the right */
+.filing-products-section .filing-product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+
+/* View Product — small button */
+.filing-products-section .filing-product-view-btn {
+    width: auto !important;
+    min-width: 110px;
+    max-width: fit-content;
+
+    flex: 0 0 auto !important;
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .filing-products-section .filing-product-bottom {
+        gap: 10px;
+    }
+
+    .filing-products-section .filing-product-actions {
+        margin-left: auto;
+    }
+
+    .filing-products-section .filing-product-view-btn {
+        min-width: 105px;
+        padding: 9px 18px;
+    }
+
+}
+/* =========================================================
+   FILING PRODUCTS
+   PRICE LEFT + VIEW PRODUCT RIGHT
+========================================================= */
+
+.filing-products-section .filing-product-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+/* Price stays on the LEFT */
+.filing-products-section .filing-product-price {
+    text-align: left;
+    margin-right: auto;
+}
+
+
+/* View Product stays on the RIGHT */
+.filing-products-section .filing-product-actions {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Keep View Product small */
+.filing-products-section .filing-product-view-btn {
+    width: auto !important;
+    min-width: 110px;
+    max-width: fit-content;
+    flex: 0 0 auto !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   DESK PRODUCTS
+   PRICE LEFT + VIEW PRODUCT RIGHT
+========================================================= */
+
+/* Hide Add to Cart */
+.desk-products-section .desk-product-cart-btn {
+    display: none !important;
+}
+
+
+/* Product card */
+.desk-products-section .desk-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Product content */
+.desk-products-section .desk-product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Price + View Product row */
+.desk-products-section .desk-product-content {
+    position: relative;
+}
+
+
+/* Price stays on LEFT */
+.desk-products-section .desk-product-price {
+    text-align: left !important;
+    margin: 0;
+}
+
+
+/* Actions move to RIGHT */
+.desk-products-section .desk-product-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+
+/* Small View Product button */
+.desk-products-section .desk-product-view-btn {
+    width: auto !important;
+    min-width: 110px;
+    max-width: fit-content;
+
+    flex: 0 0 auto !important;
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .desk-products-section .desk-product-actions {
+        justify-content: flex-end;
+    }
+
+    .desk-products-section .desk-product-view-btn {
+        min-width: 105px;
+        padding: 9px 18px;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   PAPER PRODUCTS
+   PRICE LEFT + VIEW PRODUCT RIGHT
+========================================================= */
+
+/* Hide Add to Cart */
+.paper-products-section .paper-product-cart-btn {
+    display: none !important;
+}
+
+
+/* Make cards equal-height flexible columns */
+.paper-products-section .paper-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Product content fills available space */
+.paper-products-section .paper-product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Price + View Product row */
+.paper-products-section .paper-product-price {
+    text-align: left !important;
+    margin: 0;
+}
+
+
+/* Actions go to the right */
+.paper-products-section .paper-product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+
+/* Price and actions should be on the same row */
+.paper-products-section .paper-product-content {
+    position: relative;
+}
+
+.paper-products-section .paper-product-price {
+    display: inline-block;
+}
+
+
+/* Put price + actions together */
+.paper-products-section .paper-product-price {
+    margin-right: auto;
+}
+
+.paper-products-section .paper-product-actions {
+    margin-top: -32px;
+}
+
+
+/* View Product — small button */
+.paper-products-section .paper-product-view-btn {
+    width: auto !important;
+    min-width: 110px;
+    max-width: fit-content;
+
+    flex: 0 0 auto !important;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .paper-products-section .paper-product-actions {
+        margin-top: -30px;
+    }
+
+    .paper-products-section .paper-product-view-btn {
+        min-width: 105px;
+        padding: 9px 18px;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   DESK PRODUCTS
+   EXACT SAME HORIZONTAL LINE
+========================================================= */
+
+/* Hide Add to Cart */
+.desk-products-section .desk-product-cart-btn {
+    display: none !important;
+}
+
+
+/* Bottom area */
+.desk-products-section .desk-product-bottom {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 55px !important;
+
+    margin-top: auto !important;
+    padding: 0 !important;
+
+    display: block !important;
+}
+
+
+/* PRICE — exact left position */
+.desk-products-section .desk-product-price {
+    position: absolute !important;
+
+    left: 0 !important;
+    top: 50% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateY(-50%) !important;
+
+    text-align: left !important;
+    line-height: 1 !important;
+}
+
+
+/* ACTIONS — exact right position */
+.desk-products-section .desk-product-actions {
+    position: absolute !important;
+
+    right: 0 !important;
+    top: 50% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+/* VIEW PRODUCT */
+.desk-products-section .desk-product-view-btn {
+    width: auto !important;
+    min-width: 110px !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 10px 20px !important;
+
+    flex: none !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+}
+
+
+
+/* =========================================================
+   DESK PRODUCTS
+   CLEAN PRICE LEFT + VIEW PRODUCT RIGHT
+========================================================= */
+
+/* Hide Add to Cart */
+.desk-products-section .desk-product-cart-btn {
+    display: none !important;
+}
+
+
+/* Card */
+.desk-products-section .desk-product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+
+/* Content */
+.desk-products-section .desk-product-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+}
+
+
+/* Remove ALL previous positioning */
+.desk-products-section .desk-product-price,
+.desk-products-section .desk-product-actions,
+.desk-products-section .desk-product-bottom {
+    position: static !important;
+    transform: none !important;
+}
+
+
+/* Bottom row */
+.desk-products-section .desk-product-bottom {
+    width: 100% !important;
+
+    margin-top: auto !important;
+    padding-top: 25px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 15px !important;
+}
+
+
+/* PRICE — LEFT */
+.desk-products-section .desk-product-price {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+
+    text-align: left !important;
+    line-height: 1.2 !important;
+}
+
+
+/* ACTIONS — RIGHT */
+.desk-products-section .desk-product-actions {
+    margin: 0 0 0 auto !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+
+/* VIEW PRODUCT */
+.desk-products-section .desk-product-view-btn {
+    width: auto !important;
+    min-width: 110px !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 10px 20px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 auto !important;
+
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   NEW ARRIVALS HERO
+   PRIMARY CTA — CSS ONLY
+========================================================= */
+
+.new-arrivals-hero .new-arrivals-hero-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 24px !important;
+
+    text-decoration: none !important;
+    border-radius: 6px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    /* Keep it as the primary CTA */
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Keep arrow aligned */
+.new-arrivals-hero .new-arrivals-hero-btn i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+/* Small hover movement */
+.new-arrivals-hero .new-arrivals-hero-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   NEW ARRIVALS HERO
+   MAKE CTA LOOK LIKE A BUTTON
+========================================================= */
+
+.new-arrivals-hero-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    padding: 12px 24px !important;
+
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 6px !important;
+
+    text-decoration: none !important;
+
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+
+    cursor: pointer !important;
+
+    transition: all 0.3s ease !important;
+}
+
+
+/* Arrow */
+.new-arrivals-hero-btn i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Hover */
+.new-arrivals-hero-btn:hover {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
+/* Arrow movement */
+.new-arrivals-hero-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+
+/* =========================================================
+   BRANDS HERO
+   CENTER ALIGN CONTENT
+========================================================= */
+
+.brands-hero-section .brands-hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+
+.brands-hero-section .brands-hero-content {
+    width: 100% !important;
+    max-width: 700px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+}
+
+
+/* Eyebrow */
+.brands-hero-section .section-eyebrow {
+    text-align: center !important;
+}
+
+
+/* Title */
+.brands-hero-section .brands-hero-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* Description */
+.brands-hero-section .brands-hero-description {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* Primary CTA */
+.brands-hero-section .brands-hero-btn {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+
+/* =========================================================
+   NEW ARRIVALS
+   REMOVE ADD TO CART + KEEP VIEW PRODUCT ON RIGHT
+   ========================================================= */
+
+/* Hide Add to Cart */
+.new-arrivals-cart-btn {
+    display: none !important;
+}
+
+
+/* Keep product actions aligned to the right */
+.new-arrivals-product-actions {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end !important;
+    width: 100%;
+    margin-left: auto;
+}
+
+
+/* View Product button */
+.new-arrivals-view-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Hover */
+.new-arrivals-view-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
